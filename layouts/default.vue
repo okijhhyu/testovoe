@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <div>
       <Header />
     </div>    
@@ -7,7 +7,7 @@
       <navbar />
     </div>
     <main>
-      <div class="container">
+      <div >
         <Nuxt />
       </div>
     </main>
@@ -17,11 +17,21 @@
 <script>
 import Header from '@/components/header'
 import Navbar from '@/components/navbar'
-
+import Linews from '@/components/linews'
 export default {
   components: {
     Navbar,
-    Header
+    Header,
+    Linews
   }
 }
 </script>
+<style scoped>
+div {
+  background: #E5E5E5;
+}
+.page {
+height: 100vh;
+width: 100vw;
+}
+</style>
